@@ -1,0 +1,24 @@
+#consulta-result {
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  width: 100%;
+  min-height: 550px;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.info-top-consult{
+  margin: 1rem 0 1.5rem;
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 600px) {}
+@media screen and (min-width: 150px) and (max-width: 349px) {
+  #consulta-result{
+    width: 90%;
+    margin: auto;
+  }
+  #table-consult{
+    width: 50px;
+  }
+}

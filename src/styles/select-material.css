@@ -1,0 +1,39 @@
+#select-material{
+    background-color: white;
+    background-color: #1FB60B;
+  width: 70%;
+  padding: 3rem 3rem 3rem;
+  margin: auto;
+  height: 500px;
+  border-radius: 20px;
+  
+}
+.content-slect{
+    display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 50% 50%;
+}
+.nav-reciclaje{
+    display: grid;
+    text-decoration: none;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.img-reci{
+    width: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin: auto;
+}
+.info-material{
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    text-align: center;
+    padding: .5rem;
+}
+.info-top-select{
+    color: white;
+    margin-bottom: 0;
+}

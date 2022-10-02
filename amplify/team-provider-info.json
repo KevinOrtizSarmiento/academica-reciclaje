@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-frontendreciclaje-dev-142635-authRole",
+      "UnauthRoleArn": "arn:aws:iam::486510978700:role/amplify-frontendreciclaje-dev-142635-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::486510978700:role/amplify-frontendreciclaje-dev-142635-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-frontendreciclaje-dev-142635-deployment",
+      "UnauthRoleName": "amplify-frontendreciclaje-dev-142635-unauthRole",
+      "StackName": "amplify-frontendreciclaje-dev-142635",
+      "StackId": "arn:aws:cloudformation:us-east-1:486510978700:stack/amplify-frontendreciclaje-dev-142635/2356ccf0-4288-11ed-881c-0e669b8130a3",
+      "AmplifyAppId": "daoj82n5duc8g"
+    },
+    "categories": {
+      "auth": {
+        "frontendreciclaje63be34af": {}
+      }
+    }
+  }
+}

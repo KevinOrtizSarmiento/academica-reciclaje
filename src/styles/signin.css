@@ -1,0 +1,101 @@
+.form-login{
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+    min-height: 400px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    #0000004d 0px 1px 3px -1px;
+    border-radius: 20px;
+}
+.form-login-content{
+    display: grid;
+    padding: 2rem 1rem 0;
+}
+.login-input{
+    height: 60px;
+    margin: .5rem 0 .5rem;
+    padding: 1rem;
+}
+.sesion-text{
+    padding: 1rem 1rem 0;
+    margin-bottom: 0;
+}
+.btn-login{
+    height: 60px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-size: 19px;
+    border-radius: 10px;
+    width: 100%;
+    margin: 1rem 0 1rem;
+}
+.icon-planet{
+    margin-top: -.5rem;
+    margin-left: 1.5rem;
+    width: 25px;
+    height: 25px;
+}
+.o{
+    text-align: center;
+    font-size: 15px;
+}
+.h-i{
+    margin: 5px .1rem 0 .2rem;
+    font-size: 1.65rem;
+}
+.register-to{
+    margin: auto;
+    width: 50%;
+    border: none;
+    background-color: white;
+    padding-bottom: 1rem;
+    font-size: 15px;
+}
+.register-to:hover{
+    color: green;
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+    .form-login-content{
+        padding: 1rem .5rem 0;
+    }
+    .form-login{
+        width: 100%;
+        padding: .5rem;
+    }
+    .sesion-text{
+        font-size: 16px;
+    }
+    .icon-planet{
+        margin-left: .6rem;
+        width: 23px;
+        height: 23px;
+    }
+    .h-i{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (min-width: 150px) and (max-width: 349px) {
+    .form-login-content{
+        padding: 1rem .5rem 0;
+    }
+    .form-login{
+        width: 100%;
+        padding: .5rem;
+    }
+    .sesion-text{
+        font-size: 14px;
+    }
+    .icon-planet{
+        margin-left: .3rem;
+        height: 20px;
+        width: 20px;
+    }
+    .h-i{
+        font-size: 1.2rem;
+    }
+
+}

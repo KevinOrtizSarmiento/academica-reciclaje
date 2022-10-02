@@ -1,0 +1,56 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-frontendreciclaje-dev-142635-authRole",
+      "UnauthRoleArn": "arn:aws:iam::486510978700:role/amplify-frontendreciclaje-dev-142635-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::486510978700:role/amplify-frontendreciclaje-dev-142635-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-frontendreciclaje-dev-142635-deployment",
+      "UnauthRoleName": "amplify-frontendreciclaje-dev-142635-unauthRole",
+      "StackName": "amplify-frontendreciclaje-dev-142635",
+      "StackId": "arn:aws:cloudformation:us-east-1:486510978700:stack/amplify-frontendreciclaje-dev-142635/2356ccf0-4288-11ed-881c-0e669b8130a3",
+      "AmplifyAppId": "daoj82n5duc8g"
+    }
+  },
+  "auth": {
+    "frontendreciclaje63be34af": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-frontendreciclaje-dev-142635-deployment/amplify-cfn-templates/auth/frontendreciclaje63be34af-cloudformation-template.json",
+        "logicalId": "authfrontendreciclaje63be34af"
+      },
+      "lastPushTimeStamp": "2022-10-02T19:33:14.013Z",
+      "output": {
+        "UserPoolId": "us-east-1_U3H0YmmG1",
+        "AppClientIDWeb": "2o223fudco776hoaum0b5uk687",
+        "AppClientID": "237l9ru83kt6pbo3jmi7hg7ctn",
+        "IdentityPoolId": "us-east-1:80132591-5148-438e-9a7e-7dcd4c3725ee",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:486510978700:userpool/us-east-1_U3H0YmmG1",
+        "IdentityPoolName": "frontendreciclaje63be34af_identitypool_63be34af__dev",
+        "UserPoolName": "frontendreciclaje63be34af_userpool_63be34af"
+      },
+      "lastPushDirHash": "ud7Pvo8rAJ9Cm/knzPsrfcZoty0="
+    }
+  }
+}
