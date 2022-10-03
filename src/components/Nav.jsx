@@ -18,16 +18,17 @@ const Nav = () => {
     <header id="nav-reciclaje">
       <img
         src={
-          "https://res.cloudinary.com/dlitdzj3a/image/upload/v1664749101/logo-r-removebg-preview_tczx01.png"
+          "https://res.cloudinary.com/dlitdzj3a/image/upload/v1664754956/reciclar_bridro.png"
         }
         alt=""
         id="imagen"
       />
       <NavLink id="academica" className="navbar-brand " to={"/"}>
-        Academica
+        Ecological <small className="addon-s">/ reciclaje</small>
       </NavLink>
       {currentUser ? (
-        <button
+        <div id="logout-box">
+          <button
           onClick={(e) => {
             closeSesion(e);
           }}
@@ -35,6 +36,7 @@ const Nav = () => {
         >
           Cerrar sesion
         </button>
+        </div>
       ) : null}
     </header>
   );

@@ -11,7 +11,8 @@ const Home = () => {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
   });
-  const reset = () => {
+  const reset = (e) => {
+    e.preventDefault();
     setValor("");
   };
   const conditions = [".", ",", "e", "-", "+"];
@@ -19,10 +20,7 @@ const Home = () => {
     <div id="home" className="global">
       {currentUser ? (
         <div id="form-reciclaje" className="center">
-          <div id="content-form-reciclaje">
-            <small className="name">
-              Bienvenid@ {currentUser.name ? currentUser.name : "!"}
-            </small>
+          <form id="content-form-reciclaje" autoComplete="false">
             <h5 id="pregunta-reciclaje">¿Cuanto dinero necesitas?</h5>
             <p className="limit">
               {valor.length > 14
@@ -30,7 +28,7 @@ const Home = () => {
                 : ""}
             </p>
             <input
-            
+            autoComplete="false"
               value={valor}
               disabled={conditions.some((e) => valor.includes(e)) ? "true" : ""}
               onChange={(e) => {
@@ -44,25 +42,19 @@ const Home = () => {
               placeholder="Ej: $10.000"
               className="size-bet"
             />
-            <h3 id="valor-formateado">
+            <h3 id="valor-formateado" className="w">
               {valor && !conditions.some((e) => valor.includes(e))
                 ? formatterPeso.format(valor)
                 : conditions.some((e) => valor.includes(e))
                 ? "Error!!"
                 : "$0"}
             </h3>
-            <h6>
+            <h6 className="w">
               {conditions.some((e) => valor.includes(e))
                 ? "No puedes ingresar caracteres no validos"
                 : ""}{" "}
             </h6>
-            {conditions.some((e) => valor.includes(e)) ? (
-              <button onClick={() => reset()} id="boton-reset-reciclaje">
-                Reiniciar
-              </button>
-            ) : (
-              ""
-            )}
+            
             {!conditions.some((e) => valor.includes(e)) &&
             valor.length >= 4 &&
             valor.length <= 15 ? (
@@ -80,7 +72,10 @@ const Home = () => {
                 Consultar
               </button>
             )}
-          </div>
+            <button onClick={(e) => reset(e)} id="boton-reset-reciclaje">
+                Reiniciar
+              </button>
+          </form>
         </div>
       ) : null}
     </div>

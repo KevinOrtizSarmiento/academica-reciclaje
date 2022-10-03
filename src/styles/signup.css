@@ -1,7 +1,6 @@
 #register-form {
   display: grid;
   grid-template-columns: 50% 50%;
-  margin-top: 1rem;
 }
 .size-icon-pass {
   font-size: 1.5rem;
@@ -24,20 +23,25 @@
   grid-template-columns: 90% 10%;
 }
 #signup {
-  min-height: 800px;
-  padding-top: 4.3rem;
+  padding-top: 4.5rem;
+}
+.w{
+  color: white;
 }
 .add-button {
-  background-color: transparent;
-  color: black;
-  border: 1px solid black;
+  border: 1px solid #006414;
+  background-color: #006414;
   border-radius: 40px;
   height: 50px;
   width: 50px;
   margin: auto;
 }
+.add-button:hover{
+  background-color: #0a8122;
+  border: 1px solid #0a8122;
+}
 #register-content {
-  background-color: white;
+  background-color: #1fa30d;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     #0000004d 0px 1px 3px -1px;
   width: 100%;
@@ -53,8 +57,8 @@
   font-size: 30px;
 }
 .back-top {
-  border: 1px solid black;
-  color: black;
+  background-color: #006414;
+  border: 1px solid #006414;
   margin: auto;
   text-align: center;
   border-radius: 50px;
@@ -63,20 +67,23 @@
   text-decoration: none;
 }
 .err{
-  color: red;
-  font-size: .9rem;
+  color: white;
+  padding: .5rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: red;
   margin-left: 1rem;
 }
 .back-top:hover {
-  background-color: rgb(221, 221, 221);
-  color: black;
+  background-color: #0a8122;
+  border: 1px solid #0a8122;
 }
 .top-info-register {
   display: grid;
   grid-template-columns: 10% 90%;
 }
 .error-input{
-  border: 2px solid red !important;
+  background-color: rgb(235, 192, 192);
 }
 
 #ecept {
@@ -88,23 +95,27 @@
   padding: 1rem 1rem 2rem;
 }
 #enviar-register {
-  border: 1px solid black;
-  color: black;
+  color: white;
+  border: 1px solid #006414;
+  background-color: #006414;
   height: 60px;
   font-size: 19px;
-  background-color: white;
   border-radius: 10px;
   width: 90%;
   margin: auto;
 }
-#enviar-register:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+#enviar-register:hover{
+  background-color: #0a8122;
+  border: 1px solid #0a8122;
 }
-
 @media screen and (min-width: 350px) and (max-width: 600px) {
-  #signup{
-    min-height: 1050px;
+  .err{
+    color: red;
+    padding: 0;
+    border-radius: 10px;
+    font-size: .875rem;
+    background-color: transparent;
+    margin-left: 1rem;
   }
   #register-content {
     padding: 0;
@@ -135,8 +146,13 @@
   }
 }
 @media screen and (min-width: 150px) and (max-width: 349px) {
-  #signup{
-    min-height: 1050px;
+  .err{
+    color: red;
+    padding: 0;
+    border-radius: 10px;
+    font-size: .875rem;
+    background-color: transparent;
+    margin-left: 1rem;
   }
   #register-content {
     padding: 0;

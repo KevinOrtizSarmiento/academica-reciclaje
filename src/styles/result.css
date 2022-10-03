@@ -1,0 +1,21 @@
+.result-material{
+    margin: 0 auto 0;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    color: white;
+  background-color: #1fa30d;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  width: 90%;
+  padding: 3rem 3rem 0rem;
+  min-height: 470px;
+  border-radius: 20px;
+}
+.img-material-result{
+    margin: 2rem 1rem 0;
+    width: 200px;
+    height: 200px;
+}
+.des-material-result{
+
+}
