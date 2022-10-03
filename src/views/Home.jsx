@@ -62,7 +62,7 @@ const Home = () => {
                 id="search-reciclaje"
                 to={
                   "/search/value/" +
-                  valor 
+                  valor+"/price/"+formatterPeso.format(valor) 
                 }
               >
                 Consultar
