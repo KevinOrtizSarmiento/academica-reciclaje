@@ -72,7 +72,8 @@ const Home = () => {
                 Consultar
               </button>
             )}
-            <button onClick={(e) => reset(e)} id="boton-reset-reciclaje">
+            <button disabled={!conditions.some((e) => valor.includes(e)) &&
+            valor.length <= 15?"true":""} onClick={(e) => reset(e)} id="boton-reset-reciclaje">
                 Reiniciar
               </button>
           </form>

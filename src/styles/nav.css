@@ -21,6 +21,7 @@ body {
   background-color: #054212;
 }
 #nav-reciclaje {
+  z-index:11;
   padding: 0 3rem 0;
   width: 100%;
   display: grid;
