@@ -1,130 +1,245 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Raleway:ital,wght@0,300;0,700;0,800;0,900;1,900&family=Roboto+Slab:wght@600&display=swap");
-
 .global {
-  padding-top: 4.5rem;
+  padding: 5rem 0rem 0;
   font-family: "ABeeZee", sans-serif !important;
   font-family: "Raleway", sans-serif !important;
   font-family: "Roboto Slab", serif !important;
 }
-.name {
-  font-size: 21px;
-  margin: 0 0 1rem;
-  text-align: center;
+#ecological{
+  min-height: 900px;
+  display: block;
 }
-.center {
-  margin: auto;
-}
-#content-form-reciclaje {
+.participants{
+  min-height: 400px;
   display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
 }
-#boton-reset-reciclaje {
-  color: white;
-  border: 1px solid #0a8122;
-  background-color: #0a8122;
-  margin: 0.5rem 0 0.5rem;
+.img-participant{
+  width: 160px;
+  height: 100%;
+  margin: auto;
   padding: 1rem;
-  border-radius: 20px;
-  font-size: 1.2rem;
 }
-#boton-reset-reciclaje:hover {
-  background-color: #0a8122;
-  border: 1px solid #0a8122;
-}
-#select-reciclaje:hover {
-  background-color: rgb(230, 235, 238);
-}
-#select-reciclaje:focus {
-  box-shadow: none;
-}
-#form-reciclaje {
-  color: white;
-  background-color: #1fa30d;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  width: 50%;
-  padding: 3rem 3rem 3rem;
-  min-height: 460px;
-  border-radius: 20px;
-}
-#pregunta-reciclaje {
+.title-group{
   text-align: center;
-  font-size: 1.6rem;
+  margin: 2rem auto 1rem;
 }
-#valor-formateado {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.info-description{
+  margin: 1.5rem 0;
+  font-size: 18px;
 }
-#heart {
-  height: 70px;
-  border-radius: 10px;
-  margin: 0.5rem 0 0.5rem;
-  padding: 1rem;
-  text-decoration: none;
-  border: none;
-}
-#boton-consultar-reciclaje:disabled {
-  color: rgb(202, 197, 197);
-  background-color: #0a8122;
-  border: none;
-}
-#boton-consultar-reciclaje {
-  border: 1px solid #006414;
-  height: 60px;
-  font-size: 1.2rem;
-  color: white;
-  background-color: #006414;
-  border-radius: 20px;
-}
-.limit {
-  margin-top: 1rem;
-  color: white;
-}
-#search-reciclaje {
-  text-decoration: none;
-  border: 1px solid #006414;
-  font-size: 1.2rem;
-  color: white;
-  background-color: #006414;
-  height: 60px;
+.participant{
   text-align: center;
+  background-color: white;
+  width: 95%;
+  margin: 2rem auto 0;
+  display: grid;
+  grid-template-columns: 100%;
+  padding: 0rem 3rem 0rem;
+  grid-template-rows: 40% 60%;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.text-title{
+  padding: 4rem 0 1rem;
+  font-size: 3rem;
+}
+#next-content-two{
+  color: black;
+  background-color: rgb(238, 235, 235);
+  grid-template-columns: 60% 40%;
   width: 100%;
-  border-radius: 1px;
-  padding-top: 1rem;
-  border-radius: 20px;
 }
-#search-reciclaje:hover {
-  background-color: #0a8122;
-  border: 1px solid #0a8122;
+.question-button{
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
 }
-
+#buton-con{
+  padding: .8rem 0 0;
+}
+#buton-con:hover,
+#reset-buton:hover,
+#i-dont-know:hover,
+.button-consult:hover{
+  background-color: forestgreen;
+  cursor: pointer;
+  color: white;
+}
+.button-consult{
+  width: 90%;
+  height: 50px;
+  font-size: 16px;
+  margin: auto;
+  border-radius: 10px;
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: .5rem;
+  background-color: white;
+  text-align: center;
+}
+.button-consult:hover{
+  color: black;
+  font-size: 16px;
+}
+.next-content{
+  width: 100%;
+  margin: auto;
+  min-height: 500px;
+  color: white;
+  background-color: #005311;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding-top: 3rem;
+}
+.ecological-var-padding{
+  padding: 0 8rem 0;
+}
+#home-page{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin: 0 0 6.5rem;
+}
+#content-principal{
+  padding-top: 2rem;
+}
+.title-principal{
+  font-size: 3rem;
+}
+.img-principal{
+  width: 100%;
+  margin: auto ;
+}
+.input-and-question{
+  margin: 3rem 0 0;
+}
+.text-content-add{
+  padding-bottom: 2rem;
+}
+.input-home-page{
+  height: 50px;
+  width: 100%;
+  padding: 1rem;
+}
 @media screen and (min-width: 350px) and (max-width: 600px) {
-  #form-reciclaje {
-    width: 100%;
-    padding: 3rem 1.5rem 3rem;
+  .word-content{
+    display: none;
   }
-  #select-reciclaje {
+  .participants{
+    display: block;
+  }
+  .participant{
+    min-height: 400px;
+    padding: 0rem 2rem 0rem;
+  }
+  #home-page{
+    display: block;
+    margin: 0 0 7rem;
+  }
+  .img-principal{
+    display: none;
+  }
+  #next-content-two{
+    display: block;
+  }
+  .next-content{
+    display: block;
+  }
+  .ecological-var-padding{
+    padding: 0 1.5rem 0;
+  }
+  .input-home-page{
+    width: 100%;
+    margin: 1rem auto 1rem ;
+  }
+  .question-button{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .button-consult{
+    margin: .2rem auto .5rem;
     width: 100%;
   }
-  #pregunta-reciclaje {
-    font-size: 1.5rem;
+}
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  .word-content{
+    display: none;
+  }
+  .participants{
+    display: block;
+  }
+  .participant{
+    min-height: 400px;
+    padding: 0rem 2rem 0rem;
+  }
+  #home-page{
+    display: block;
+    margin: 0 0 7rem;
+  }
+  .img-principal{
+    display: none;
+  }
+  #next-content-two{
+    display: block;
+  }
+  .next-content{
+    display: block;
+  }
+  .ecological-var-padding{
+    padding:  0 3rem 0;
+  }
+  .input-home-page{
+    width: 100%;
+    margin: 1rem auto 1rem ;
+  }
+  .question-button{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .button-consult{
+    margin: .2rem auto .5rem;
+    width: 100%;
   }
 }
 @media screen and (min-width: 150px) and (max-width: 349px) {
-  #form-reciclaje {
+  .word-content{
+    display: none;
+  }
+  .participants{
+    display: block;
+  }
+  .participant{
+    min-height: 400px;
+    padding: 0rem 2rem 0rem;
+  }
+  #home-page{
+    display: block;
+    margin: 0 0 7rem;
+  }
+  .img-principal{
+    display: none;
+  }
+  #next-content-two{
+    display: block;
+  }
+  .next-content{
+    display: block;
+  }
+  .ecological-var-padding{
+    padding: 0 1.5rem 0;
+  }
+  .input-home-page{
     width: 100%;
-    padding: 3rem 1.5rem 3rem;
+    margin: 1rem auto 1rem ;
   }
-  #select-reciclaje {
+  .question-button{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .button-consult{
+    margin: .2rem auto .5rem;
     width: 100%;
-  }
-  #pregunta-reciclaje {
-    font-size: 1.5rem;
-  }
-  #content-form-reciclaje {
-    margin-left: -0.5rem;
   }
 }
-
 /* Codigo sacado de internet */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
